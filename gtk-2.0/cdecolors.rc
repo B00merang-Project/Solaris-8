@@ -1,0 +1,134 @@
+# Originally from CDE by Jos van Riswick 2017 / josvanr@gmail.com
+# Simplified for one color scheme by Christian Medel <cmedelahumada@gmail.com>
+# License: GPL3
+    
+gtk-color-scheme = "base_color: #bebebe"
+gtk-color-scheme = "fg_color: #000000"
+gtk-color-scheme = "tooltip_fg_color: #000000"
+gtk-color-scheme = "selected_bg_color: #bcbcbc"
+gtk-color-scheme = "selected_fg_color: #000000"
+gtk-color-scheme = "text_color: #000000"
+gtk-color-scheme = "bg_color: #bebebe"
+gtk-color-scheme = "insensitive_bg_color: #bcbcbc"
+gtk-color-scheme = "tooltip_bg_color: #bcbcbc"
+
+style "cde_style_4"
+{
+  fg[NORMAL]  ="#000000"
+  bg[NORMAL]  ="#bebebe"
+  text[NORMAL]="#000000"
+  base[NORMAL]="#bebebe"
+
+  fg[ACTIVE]  ="#000000"
+  bg[ACTIVE]  ="#d9d2c6"
+  text[ACTIVE]="#000000"
+  base[ACTIVE]="#d9d2c6"
+
+  fg[PRELIGHT]="#000000"
+  bg[PRELIGHT]="#bebebe"
+  text[PRELIGHT]="#000000"
+  base[PRELIGHT] ="#bebebe"
+
+  fg[SELECTED]="#bebebe"
+  bg[SELECTED]="#000000"
+  text[SELECTED]="#bebebe"
+  base[SELECTED]="#000000"
+
+  #this is the dark color of the etched in insensitive text when on normal background of widget
+  fg[INSENSITIVE]="#99948c"
+  bg[INSENSITIVE]="#bebebe"
+  #insensitive text color in entry and also fg color of etched in text in combo box
+  text[INSENSITIVE]="#99948c"
+  #in cde this is normal bg color
+  base[INSENSITIVE]="#bebebe"
+}
+
+style "cde_style_5"
+{
+  fg[NORMAL]  ="#000000"
+  bg[NORMAL]  ="#bebebe"
+  text[NORMAL]="#000000"
+  base[NORMAL]="#bebebe"
+
+  fg[ACTIVE]  ="#000000"
+  bg[ACTIVE]  ="#bcbcbc"
+  text[ACTIVE]="#000000"
+  base[ACTIVE]="#bcbcbc"
+
+  fg[PRELIGHT]="#000000"
+  bg[PRELIGHT]="#bebebe"
+  text[PRELIGHT]="#000000"
+  base[PRELIGHT] ="#bebebe"
+
+  fg[SELECTED]="#bebebe"
+  bg[SELECTED]="#000000"
+  text[SELECTED]="#bebebe"
+  base[SELECTED]="#000000"
+
+  #this is the dark color of the etched in insensitive text when on normal background of widget
+  fg[INSENSITIVE]="#5e606a"
+  bg[INSENSITIVE]="#bebebe"
+  #insensitive text color in entry and also fg color of etched in text in combo box
+  text[INSENSITIVE]="#5e606a"
+  #in cde this is normal bg color
+  base[INSENSITIVE]="#bebebe"
+}
+
+style "cde_style_6"
+{
+  fg[NORMAL]  ="#000000"
+  bg[NORMAL]  ="#bebebe"
+  text[NORMAL]="#000000"
+  base[NORMAL]="#bebebe"
+
+  fg[ACTIVE]  ="#000000"
+  bg[ACTIVE]  ="#bcbcbc"
+  text[ACTIVE]="#000000"
+  base[ACTIVE]="#bcbcbc"
+
+  fg[PRELIGHT]="#000000"
+  bg[PRELIGHT]="#bebebe"
+  text[PRELIGHT]="#000000"
+  base[PRELIGHT] ="#bebebe"
+
+  fg[SELECTED]="#bebebe"
+  bg[SELECTED]="#000000"
+  text[SELECTED]="#bebebe"
+  base[SELECTED]="#000000"
+
+  #this is the dark color of the etched in insensitive text when on normal background of widget
+  fg[INSENSITIVE]="#5e606a"
+  bg[INSENSITIVE]="#bebebe"
+  #insensitive text color in entry and also fg color of etched in text in combo box
+  text[INSENSITIVE]="#5e606a"
+  #in cde this is normal bg color
+  base[INSENSITIVE]="#bebebe"
+}
+
+style "cde_style_sel_5"
+{
+  fg[NORMAL]  ="#000000"
+  bg[NORMAL]  ="#bcbcbc"
+  text[NORMAL]="#000000"
+  base[NORMAL]="#bcbcbc"
+
+  fg[ACTIVE]  ="#000000"
+  bg[ACTIVE]  ="#bebebe"
+  text[ACTIVE]="#000000"
+  base[ACTIVE]="#bebebe"
+
+  fg[PRELIGHT]="#000000"
+  bg[PRELIGHT]="#5e606a"
+  text[PRELIGHT]="#000000"
+  base[PRELIGHT] ="#5e606a"
+
+  fg[SELECTED]="#000000"
+  bg[SELECTED]="#5e606a"
+  text[SELECTED]="#000000"
+  base[SELECTED]="#5e606a"
+
+  fg[INSENSITIVE]="#000000"
+  bg[INSENSITIVE]="#bcbcbc"
+  text[INSENSITIVE]="#000000"
+  base[INSENSITIVE]="#bcbcbc"
+}
