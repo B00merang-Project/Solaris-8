@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Solaris 8
+Comment=A GTK theme based on Solaris 8
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Solaris 8
+MetacityTheme=Solaris 8
+IconTheme=Grayscale
+CursorTheme=DMZ-Black
+ButtonLayout=close,minimize,maximize:
