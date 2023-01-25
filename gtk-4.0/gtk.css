@@ -17,7 +17,7 @@ dnd {
 image:disabled {
   -gtk-icon-filter: opacity(0.5); }
 
-image, image:disabled, label, label:disabled, box, box:disabled {
+image, label, box {
   background-color: transparent; }
 
 .view {
@@ -742,40 +742,16 @@ headerbar {
     color: alpha(currentColor, 0.7); }
     headerbar .subtitle:backdrop {
       color: alpha(currentColor, 0.7); }
-  headerbar button {
-    padding: 4px 8px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 0px;
-    color: #000000;
-    border-color: #7c7c7c;
-    border-top-color: #ececec;
-    border-left-color: #ececec;
-    background-color: #bebebe;
-    outline-color: #000000;
-    outline-width: 2px;
-    outline-offset: 2px;
-    outline-style: solid; }
-    headerbar button:active, headerbar button:checked {
-      color: #000000;
-      border-top-color: #7c7c7c;
-      border-left-color: #7c7c7c;
-      border-bottom-color: #ececec;
-      border-right-color: #ececec;
-      background-color: #ababab;
-      background-image: none; }
-      headerbar button:active:disabled, headerbar button:checked:disabled {
-        color: #0a0a0a;
-        text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
-        background-color: #a2a2a2; }
-    headerbar button:disabled {
-      color: #303030;
-      text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
-  headerbar entry {
-    padding: 4px 8px; }
   headerbar.titlebar, .titlebar headerbar {
     border-radius: 0px 0px 0px 0px; }
-  headerbar .titlebutton.close, headerbar .titlebutton.maximize, headerbar .titlebutton.minimize, headerbar .titlebutton:not(separator) {
+
+windowcontrols {
+  border-spacing: 6px; }
+  windowcontrols.start:not(.empty):dir(ltr), windowcontrols.end:not(.empty):dir(rtl) {
+    margin-right: 7px; }
+  windowcontrols.start:not(.empty):dir(rtl), windowcontrols.end:not(.empty):dir(ltr) {
+    margin-left: 7px; }
+  windowcontrols button.close, windowcontrols button.maximize, windowcontrols button.minimize {
     min-width: 19px;
     min-height: 19px;
     padding: 0;
@@ -783,7 +759,7 @@ headerbar {
     color: #b5b5b5;
     background-color: #b5b5b5;
     -gtk-icon-shadow: 1px 1px rgba(255, 255, 255, 0.7), -1px -1px dimgray; }
-    headerbar .titlebutton.close:backdrop, headerbar .titlebutton.maximize:backdrop, headerbar .titlebutton.minimize:backdrop, headerbar .titlebutton:not(separator):backdrop {
+    windowcontrols button.close:backdrop, windowcontrols button.maximize:backdrop, windowcontrols button.minimize:backdrop {
       background-color: #cbcbcb; }
 
 pathbar > button.text-button, pathbar > button.image-button, pathbar > button {
@@ -1450,7 +1426,7 @@ actionbar {
     padding: 0 12px; }
 
 scrolledwindow > overshoot.top {
-  background-image: radial-gradient(farthest-side at top, black, transparent);
+  background-image: radial-gradient(farthest-side at top, rgba(0, 0, 0, 0.5), transparent);
   background-size: 100% 50%;
   background-repeat: no-repeat;
   background-position: top;
@@ -1459,7 +1435,7 @@ scrolledwindow > overshoot.top {
   box-shadow: none; }
 
 scrolledwindow > overshoot.bottom {
-  background-image: radial-gradient(farthest-side at bottom, black, transparent);
+  background-image: radial-gradient(farthest-side at bottom, rgba(0, 0, 0, 0.5), transparent);
   background-size: 100% 50%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -1468,7 +1444,7 @@ scrolledwindow > overshoot.bottom {
   box-shadow: none; }
 
 scrolledwindow > overshoot.left {
-  background-image: radial-gradient(farthest-side at left, black, transparent);
+  background-image: radial-gradient(farthest-side at left, rgba(0, 0, 0, 0.5), transparent);
   background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position: left;
@@ -1477,7 +1453,7 @@ scrolledwindow > overshoot.left {
   box-shadow: none; }
 
 scrolledwindow > overshoot.right {
-  background-image: radial-gradient(farthest-side at right, black, transparent);
+  background-image: radial-gradient(farthest-side at right, rgba(0, 0, 0, 0.5), transparent);
   background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position: right;
@@ -2119,12 +2095,10 @@ popover.entry-completion > contents {
   padding: 0; }
 
 statusbar {
-  color: #000000;
   border: 1px solid #7c7c7c;
   border-bottom-color: #ececec;
-  border-right-color: #ececec; }
-  statusbar frame > border {
-    border: none; }
+  border-right-color: #ececec;
+  padding: 4px; }
 
 menubutton > button > box {
   border-spacing: 6px; }
