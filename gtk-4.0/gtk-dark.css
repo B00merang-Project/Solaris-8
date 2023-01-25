@@ -1741,7 +1741,6 @@ columnview row:not(:selected) cell editablelabel.editing text selection {
     border: none; }
 
 calendar {
-  padding: 2px;
   border-width: 1px;
   border-radius: 0px;
   border-style: solid;
@@ -1749,17 +1748,32 @@ calendar {
   color: #000000; }
   calendar.header {
     border: none;
+    border-bottom: 1px solid #536698;
     color: #000000; }
   calendar.button {
-    color: #000000; }
+    color: rgba(0, 0, 0, 0.45); }
+    calendar.button:hover {
+      color: #000000; }
+    calendar.button:backdrop {
+      color: rgba(0, 0, 0, 0.45); }
+    calendar.button:disabled {
+      color: rgba(57, 68, 96, 0.45); }
   calendar:selected {
-    border-radius: 0;
+    border-radius: 1px;
     color: #7287c0;
     background-color: #000000; }
+    calendar:selected:backdrop {
+      color: #7287c0;
+      background-color: #000000; }
   calendar:indeterminate {
-    color: alpha(currentColor, 0.55); }
+    color: alpha(currentColor, 0.1); }
   calendar.highlight {
-    color: #000000; }
+    color: #394460; }
+    calendar.highlight:backdrop {
+      color: #394460; }
+  calendar:backdrop {
+    color: #000000;
+    border-color: #4e5e88; }
 
 messagedialog {
   border-bottom-left-radius: 0px;
