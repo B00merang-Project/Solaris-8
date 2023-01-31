@@ -84,7 +84,8 @@ label > selection {
   color: #7287c0;
   background-color: #000000; }
   label > selection:focus-within {
-    color: #000000; }
+    color: #7287c0;
+    background-color: #000000; }
 
 label:disabled {
   color: #394460; }
@@ -603,7 +604,7 @@ searchbar {
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: #4e5e88;
-  background-color: #7287c0; }
+  background-color: #6a7fb9; }
 
 .nautilus-window .searchbar-container {
   margin-top: -1px; }
@@ -946,34 +947,30 @@ menubar, .menubar {
   menubar:backdrop, .menubar:backdrop {
     color: #000000;
     background-color: #7287c0; }
-
-menubar > menuitem, .menubar > menuitem {
-  margin-left: 2px;
-  margin-right: 2px;
-  padding: 3px 20px 3px 8px;
-  border: 1px solid #434d68;
-  border-top-color: #d5dbec;
-  border-left-color: #d5dbec;
-  border-radius: 40px;
-  color: #000000;
-  background-color: transparent;
-  background-image: url("assets/menuitem_arrow.png");
-  background-size: 14px 9px;
-  background-position: right center;
-  background-repeat: no-repeat; }
-  menubar > menuitem:hover, .menubar > menuitem:hover {
-    border-color: #434d68;
-    border-bottom-color: #d5dbec;
-    border-right-color: #d5dbec; }
-  menubar > menuitem:disabled, .menubar > menuitem:disabled {
-    color: #394460;
-    background-color: transparent; }
-  menubar > menuitem:backdrop, .menubar > menuitem:backdrop {
+  menubar > menuitem, .menubar > menuitem {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 3px 20px 3px 8px;
+    border: 1px solid #434d68;
+    border-top-color: #d5dbec;
+    border-left-color: #d5dbec;
+    border-radius: 40px;
     color: #000000;
-    background-color: transparent; }
-
-menubar menu menuitem {
-  text-shadow: none; }
+    background-color: transparent;
+    background-image: url("assets/menuitem_arrow.png");
+    background-size: 14px 9px;
+    background-position: right center;
+    background-repeat: no-repeat; }
+    menubar > menuitem:hover, .menubar > menuitem:hover {
+      border-color: #434d68;
+      border-bottom-color: #d5dbec;
+      border-right-color: #d5dbec; }
+    menubar > menuitem:disabled, .menubar > menuitem:disabled {
+      color: #394460;
+      background-color: transparent; }
+    menubar > menuitem:backdrop, .menubar > menuitem:backdrop {
+      color: #000000;
+      background-color: transparent; }
 
 notebook {
   padding: 0; }
@@ -1405,8 +1402,7 @@ window.dialog.print drawing {
 window.dialog.print .dialog-action-box {
   margin: 12px; }
 
-frame,
-.frame {
+frame, .frame {
   border: 1px solid #4e5e88; }
 
 frame {
