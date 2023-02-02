@@ -3,7 +3,7 @@
   background-color: rgba(190, 190, 190, 0.999); }
   .background:backdrop {
     color: #000000;
-    background-color: #bebebe; }
+    background-color: rgba(190, 190, 190, 0.999); }
 
 dnd {
   color: #000000; }
@@ -525,6 +525,37 @@ button.destructive-action {
     color: #bcb2b2;
     background-color: #ae6c6c; }
 
+modelbutton.flat {
+  min-height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: none;
+  border-radius: 0px;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none; }
+  modelbutton.flat:hover {
+    color: #bebebe;
+    background-color: #000000; }
+  modelbutton.flat:selected {
+    color: #bebebe;
+    background-color: #000000; }
+  modelbutton.flat:disabled {
+    color: #5f5f5f; }
+  modelbutton.flat > image {
+    padding-right: 4px; }
+  modelbutton.flat arrow {
+    background: none;
+    min-width: 16px;
+    min-height: 16px;
+    opacity: 0.3; }
+    modelbutton.flat arrow:hover {
+      background: none; }
+    modelbutton.flat arrow.left {
+      -gtk-icon-source: -gtk-icontheme("go-previous-symbolic"); }
+    modelbutton.flat arrow.right {
+      -gtk-icon-source: -gtk-icontheme("go-next-symbolic"); }
+
 button.link,
 link {
   color: #495DA7;
@@ -887,71 +918,28 @@ treeview entry, treeview entry.flat {
   treeview entry:focus, treeview entry.flat:focus {
     border-color: #000000; }
 
-popover, popover.background {
+popover.background {
   padding: 2px;
-  border-color: #7c7c7c;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 0px;
-  color: #000000;
-  background-clip: border-box;
   background-color: #bebebe;
-  box-shadow: none; }
-  .csd popover, popover, .csd popover.background, popover.background {
-    border: 1px solid #7c7c7c; }
-  popover > list, popover > .view, popover > iconview, popover > toolbar, popover > .inline-toolbar, popover.background > list, popover.background > .view, popover.background > iconview, popover.background > toolbar, popover.background > .inline-toolbar {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+  .csd popover.background, popover.background {
+    border: 1px solid #7c7c7c;
+    border-radius: 0px; }
+    .csd popover.background:backdrop, popover.background:backdrop {
+      border-color: #7c7c7c; }
+  popover.background:backdrop {
+    background-color: #bebebe;
+    box-shadow: none; }
+  popover.background > list, popover.background > .view, popover.background > iconview, popover.background > toolbar, popover.background > .inline-toolbar {
     border-style: none;
     background-color: transparent; }
-  popover checkbutton:selected, popover radiobutton:selected, popover.background checkbutton:selected, popover.background radiobutton:selected {
-    color: #bebebe;
-    background-color: #000000; }
-
-popover.osd {
-  box-shadow: none; }
-  popover.osd > toolbar button {
-    border-width: 0;
-    border-radius: 0;
-    background-color: transparent; }
-
-popover:backdrop {
-  border-color: #7c7c7c;
-  color: #000000;
-  background-color: #bebebe;
-  box-shadow: none; }
+  popover.background separator {
+    margin: 3px; }
+  popover.background list separator {
+    margin: 0px; }
 
 magnifier {
   background-color: #bebebe; }
-
-modelbutton.flat {
-  min-height: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border: none;
-  border-radius: 0px;
-  background-color: transparent;
-  background-image: none;
-  box-shadow: none; }
-  modelbutton.flat:hover {
-    color: #bebebe;
-    background-color: #000000; }
-  modelbutton.flat:selected {
-    color: #bebebe;
-    background-color: #000000; }
-  modelbutton.flat:disabled {
-    color: #5f5f5f; }
-  modelbutton.flat > image {
-    padding-right: 4px; }
-  modelbutton.flat arrow {
-    background: none;
-    min-width: 16px;
-    min-height: 16px;
-    opacity: 0.3; }
-    modelbutton.flat arrow:hover {
-      background: none; }
-    modelbutton.flat arrow.left {
-      -gtk-icon-source: -gtk-icontheme("go-previous-symbolic"); }
-    modelbutton.flat arrow.right {
-      -gtk-icon-source: -gtk-icontheme("go-next-symbolic"); }
 
 menu, .menu {
   margin: 4px;
@@ -1583,6 +1571,20 @@ list {
       background-color: #000000; }
     list row:selected button:not(:hover):not(:checked) {
       color: #bebebe; }
+
+columnview > listview > row {
+  padding: 0; }
+  columnview > listview > row > cell {
+    padding: 8px 6px; }
+    columnview > listview > row > cell:not(:first-child) {
+      border-left: 1px solid transparent; }
+
+columnview.column-separators > listview > row > cell {
+  border-left-color: #7c7c7c; }
+
+columnview.data-table > listview > row > cell {
+  padding-top: 2px;
+  padding-bottom: 2px; }
 
 treeexpander {
   border-spacing: 4px; }
