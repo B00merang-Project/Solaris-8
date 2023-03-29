@@ -232,7 +232,7 @@ window.aboutdialog image.large-icons {
   border-width: 1px;
   border-style: solid;
   border-color: #7a7a7a;
-  border-radius: 0px;
+  border-radius: 8px;
   background-image: none;
   background-color: #a4a4a4;
   color: #000000; }
@@ -266,7 +266,7 @@ window.aboutdialog image.large-icons {
     border-width: 1px;
     border-style: solid;
     border-color: #7a7a7a;
-    border-radius: 0px;
+    border-radius: 8px;
     background-image: none;
     background-color: #a4a4a4;
     color: #000000; }
@@ -479,7 +479,7 @@ editablelabel > stack > text > selection {
 
 button {
   padding: 4px 8px;
-  border-radius: 0px;
+  border-radius: 8px;
   border: 1px solid #7c7c7c;
   border-top-color: #ececec;
   border-left-color: #ececec;
@@ -510,7 +510,7 @@ button {
     text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
   button.flat {
     border-color: transparent;
-    border-radius: 0px;
+    border-radius: 8px;
     color: #000000;
     background-color: transparent;
     background-image: none;
@@ -541,7 +541,7 @@ button {
       background-color: transparent; }
 
 button.destructive-action {
-  border-radius: 0px;
+  border-radius: 8px;
   border: 1px solid #ca9292;
   border-right-color: #642c2c;
   border-bottom-color: #642c2c;
@@ -662,7 +662,7 @@ toolbar {
     background-color: #b5b5b5; }
   toolbar button.flat {
     border-color: transparent;
-    border-radius: 0px;
+    border-radius: 8px;
     color: #000000;
     background-color: transparent;
     background-image: none;
@@ -973,10 +973,14 @@ popover.background, popover.background:backdrop {
 popover > arrow,
 popover > contents {
   border: 1px solid #7c7c7c;
+  border-top-color: #ececec;
+  border-left-color: #ececec;
   color: #000000;
   background-color: #bebebe;
   background-clip: padding-box;
   box-shadow: none; }
+  popover > contents > scrolledwindow {
+    border-width: 0px; }
 
 popover > contents {
   border-radius: 0px; }
@@ -1010,7 +1014,11 @@ popover.menu modelbutton {
   background-image: none;
   box-shadow: none; }
   popover.menu modelbutton:hover, popover.menu modelbutton:selected {
-    border-color: #000000; }
+    color: #000000;
+    border-color: #000000;
+    border-bottom-color: white;
+    border-right-color: white;
+    background-color: #a2a2a2; }
   popover.menu modelbutton:disabled {
     color: #5f5f5f; }
   popover.menu modelbutton > image {
@@ -1076,7 +1084,8 @@ menubar {
     background-image: url("assets/menuitem_arrow.png");
     background-size: 14px 9px;
     background-position: right center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    box-shadow: none; }
     menubar > item:selected {
       border-color: #636363;
       border-bottom-color: #ececec;
@@ -1313,7 +1322,7 @@ checkbutton.text-button, radiobutton.text-button {
   outline-offset: 0; }
 
 check, radio {
-  margin: 4px;
+  margin: 0 4px;
   min-height: 11px;
   min-width: 11px;
   border-style: none;
