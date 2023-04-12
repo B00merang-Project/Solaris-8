@@ -1462,12 +1462,13 @@ progressbar {
   progressbar > trough > progress {
     border: 1px solid #000000;
     border-radius: 10px;
-    background-color: #000000;
-    box-shadow: inset 0 1px #7287c0; }
+    background-color: #000000; }
     progressbar > trough > progress:disabled {
       border-style: dotted; }
   progressbar.vertical > trough > progress {
     box-shadow: inset 1px 0 #7287c0; }
+  progressbar.horizontal > trough > progress {
+    box-shadow: inset 0 1px #7287c0; }
   progressbar.horizontal > trough {
     min-width: 150px; }
   progressbar.vertical > trough {
