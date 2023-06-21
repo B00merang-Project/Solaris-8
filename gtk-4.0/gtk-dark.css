@@ -479,7 +479,9 @@ editablelabel > stack > text > selection {
 
 
 button {
-  padding: 4px 8px;
+  padding: 2px 2px;
+  min-width: 10px;
+  min-height: 18px;
   border-radius: 8px;
   border: 1px solid #4b587c;
   border-top-color: #d5dbec;
@@ -582,8 +584,6 @@ button.flat {
     background-color: #5d71a9; }
 
 button.destructive-action {
-  padding: 4px 8px;
-  border-radius: 8px;
   border: 1px solid #623a3a;
   border-top-color: #e5c8c8;
   border-left-color: #e5c8c8;
@@ -617,8 +617,6 @@ button.destructive-action {
     background-image: none; }
 
 button.suggested-action {
-  padding: 4px 8px;
-  border-radius: 8px;
   border: 1px solid black;
   border-top-color: #b3b3b3;
   border-left-color: #b3b3b3;
@@ -1763,7 +1761,7 @@ separator {
   min-width: 1px;
   min-height: 1px;
   background-color: #4e5e88;
-  box-shadow: -1px -1px #d5dbec; }
+  box-shadow: 1px 1px #d5dbec; }
   separator:backdrop {
     background-color: #4e5e88; }
   button separator {
@@ -1787,14 +1785,14 @@ separator {
       background-color: #4e5e88; }
   .titlebar separator, .titlebar:not(headerbar) > separator, .titlebar separator.titlebutton, .titlebar:not(headerbar) > separator.titlebutton {
     background-color: #4c5a80;
-    box-shadow: -1px -1px rgba(255, 255, 255, 0.4); }
+    box-shadow: 1px 1px rgba(255, 255, 255, 0.4); }
     .titlebar separator:backdrop, .titlebar:not(headerbar) > separator:backdrop, .titlebar separator.titlebutton:backdrop, .titlebar:not(headerbar) > separator.titlebutton:backdrop {
       background-color: #4e5e88; }
   headerbar separator.titlebutton, .titlebar:not(headerbar) separator.titlebutton {
     min-width: 1px;
     min-height: 1px;
     background-color: #4c5a80;
-    box-shadow: -1px -1px rgba(255, 255, 255, 0.4); }
+    box-shadow: 1px 1px rgba(255, 255, 255, 0.4); }
     headerbar separator.titlebutton:backdrop, .titlebar:not(headerbar) separator.titlebutton:backdrop {
       background-color: #4e5e88; }
   .primary-toolbar button separator, toolbar button separator, .primary-toolbar:not(.libreoffice-toolbar) separator {
@@ -1808,7 +1806,7 @@ separator {
       border-color: #4e5e88; }
   .titlebutton button separator, .titlebutton separator.titlebutton {
     border-color: #4c5a80;
-    box-shadow: -1px -1px rgba(255, 255, 255, 0.4); }
+    box-shadow: 1px 1px rgba(255, 255, 255, 0.4); }
     .titlebutton button separator:backdrop, .titlebutton separator.titlebutton:backdrop {
       border-color: #4e5e88; }
   menuitem separator {
